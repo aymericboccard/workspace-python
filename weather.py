@@ -25,6 +25,8 @@ def extract(source, body):
     else:
         return {}
 
+# use this function if you want current data for a location
+# zipcode is required for meteo_france
 def find(city, zipcode=''):
     sources = {"meteo_france": url_meteo_france(city, zipcode)}
     data = {}
